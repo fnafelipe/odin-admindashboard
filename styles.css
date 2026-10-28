@@ -3,3 +3,28 @@
 body {
   font-family: "Bricolage Grotesque";
 }
+
+.container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 20% 80%;
+  grid-template-areas: "dashboard-menu page-header" "dashboard-menu main-content";
+}
+
+.dashboard-menu {
+  background-color: rgb(0, 140, 255);
+  color: white;
+  grid-area: dashboard-menu;
+}
+
+.page-header {
+  background-color: white;
+  grid-area: page-header;
+}
+
+.main-content {
+  background-color: lightgray;
+  grid-area: main-content;
+}
