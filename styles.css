@@ -42,13 +42,20 @@ a {
   flex-direction: column;
   background-color: white;
   grid-area: page-header;
-  padding: 35px;
-  gap: 35px;
+  padding: 25px;
+  gap: 25px;
 }
 
 .main-content {
   background-color: lightgray;
   grid-area: main-content;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "projects-section announcements-section" "projects-section trending-section";
+  background-color: black;
+  gap: 3px;
+  border: 3px solid black;
 }
 
 .logo {
@@ -125,4 +132,41 @@ a {
   border-radius: 20px;
   font-weight: bolder;
   font-size: 15px;
+}
+
+.projects-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 1fr;
+  background-color: red;
+  grid-area: projects-section;
+}
+
+.projects-section h2 {
+  grid-column: span 2;
+  grid-row: 1
+}
+
+.project {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.announcements-section, .trending-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.announcements-section {
+  background-color: yellow;
+  grid-area: announcements-section;
+}
+
+.announcement {
+
+}
+
+.trending-section {
+  background-color: green;
+  grid-area: trending-section;
 }
