@@ -17,6 +17,10 @@ a {
   text-decoration: none;
 }
 
+svg {
+  fill: currentColor;
+}
+
 .container {
   display: grid;
   width: 100%;
@@ -58,7 +62,10 @@ a {
 }
 
 .logo {
-  font-size: 30px;
+  display: flex;
+  height: 40px;
+  gap: 10px;
+  color: white;
 }
 
 .dashboard-links {
@@ -74,10 +81,11 @@ a {
   gap: 20px;
 }
 
-.dashboard-links a {
+.page-link, .system-link {
+  display: flex;
+  height: 30px;
+  gap: 10px;
   color: white;
-  font-weight: bold;
-  font-size: 20px;
 }
 
 .navigation-section {
@@ -86,6 +94,8 @@ a {
   align-items: center;
   gap: 25px;
 }
+
+.searc
 
 #search-bar {
   width: 70%;
@@ -178,13 +188,6 @@ a {
   background-color: white;
   border-radius: 15px;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 25px;
-  justify-content: space-between;
-}
-
-.announcements {
   display: flex;
   flex-direction: column;
   padding: 25px;
