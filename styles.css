@@ -178,4 +178,19 @@ a {
   background-color: white;
   border-radius: 15px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  justify-content: space-between;
+}
+
+.announcements {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  justify-content: space-between;
+}
+
+.trending {
+  text-align: center;
 }
