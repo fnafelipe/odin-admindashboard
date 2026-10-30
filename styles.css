@@ -81,7 +81,8 @@ svg {
   gap: 20px;
 }
 
-.page-link, .system-link {
+.page-link,
+.system-link {
   display: flex;
   height: 30px;
   gap: 10px;
@@ -95,11 +96,15 @@ svg {
   gap: 25px;
 }
 
-.searc
+.search-section {
+  display: flex;
+  gap: 10px;
+  height: 35px;
+  width: 70%;
+}
 
 #search-bar {
-  width: 70%;
-  height: 35px;
+  width: 100%;
   background-color: whitesmoke;
   border-radius: 20px;
   border: none;
@@ -107,8 +112,14 @@ svg {
 }
 
 .profile-items {
+  width: 20%;
   font-size: 20px;
   text-align: center;
+  color: black;
+}
+
+.profile-items svg {
+  height: 25px;
 }
 
 .action-section {
