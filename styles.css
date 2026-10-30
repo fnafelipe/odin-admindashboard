@@ -47,15 +47,14 @@ a {
 }
 
 .main-content {
-  background-color: lightgray;
+  background-color: whitesmoke;
   grid-area: main-content;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "projects-section announcements-section" "projects-section trending-section";
-  background-color: black;
-  gap: 3px;
-  border: 3px solid black;
+  gap: 25px;
+  padding: 50px 25px;
 }
 
 .logo {
@@ -91,7 +90,7 @@ a {
 #search-bar {
   width: 70%;
   height: 35px;
-  background-color: lightgray;
+  background-color: whitesmoke;
   border-radius: 20px;
   border: none;
   padding: 0 15px;
@@ -137,9 +136,9 @@ a {
 .projects-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50px 1fr 1fr 1fr;
-  background-color: red;
+  grid-template-rows: auto 1fr 1fr 1fr;
   grid-area: projects-section;
+  gap: 25px;
 }
 
 .projects-section h2 {
@@ -148,38 +147,35 @@ a {
 }
 
 .project {
+  display: flex;
+  flex-direction: column;
   grid-column: span 1;
   grid-row: span 1;
+  background-color: white;
+  border-radius: 15px;
+  border-left: 10px solid orange;
+  padding: 25px;
+  gap: 10px;
 }
 
 .announcements-section,
 .trending-section {
   display: flex;
   flex-direction: column;
+  gap: 25px;
 }
 
 .announcements-section {
-  background-color: yellow;
   grid-area: announcements-section;
 }
 
-.announcements-section h2 {
-  height: 50px;
-}
-
-.announcement {
-  height: calc((100% - 50px) / 3);
-}
-
 .trending-section {
-  background-color: green;
   grid-area: trending-section;
 }
 
-.trending-section h2 {
-  height: 50px;
-}
-
-.trending {
-  height: calc((100% - 50px) / 4);
+.announcements,
+.trendings {
+  background-color: white;
+  border-radius: 15px;
+  height: 100%;
 }
