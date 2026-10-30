@@ -144,7 +144,7 @@ a {
 
 .projects-section h2 {
   grid-column: span 2;
-  grid-row: 1
+  grid-row: 1;
 }
 
 .project {
@@ -152,7 +152,8 @@ a {
   grid-row: span 1;
 }
 
-.announcements-section, .trending-section {
+.announcements-section,
+.trending-section {
   display: flex;
   flex-direction: column;
 }
@@ -162,11 +163,23 @@ a {
   grid-area: announcements-section;
 }
 
-.announcement {
+.announcements-section h2 {
+  height: 50px;
+}
 
+.announcement {
+  height: calc((100% - 50px) / 3);
 }
 
 .trending-section {
   background-color: green;
   grid-area: trending-section;
+}
+
+.trending-section h2 {
+  height: 50px;
+}
+
+.trending {
+  height: calc((100% - 50px) / 4);
 }
